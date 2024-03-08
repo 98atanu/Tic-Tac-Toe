@@ -21,7 +21,7 @@ const gameSlice = createSlice({
             state.winner = calculateWinner(state.squares)
         },
 
-        resetGames(state){
+        resetGame(state){
             state.squares = Array(9).fill(null);
             state.xIsNext = true;
             state.winner = null;
