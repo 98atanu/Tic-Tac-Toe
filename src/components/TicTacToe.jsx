@@ -25,9 +25,9 @@ const TicTacToe = () => {
         initial={{ opacity: 0, y: -200 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: [0.25, 1, 0.5, 1], duration: 1 }}
-        className="title text-white  text-[6vw] tracking-tight font-semibold  py-[2vw] sm:py-[6vw] mb-[2vw] "
+        className="title text-white  text-[6vw] tracking-tight font-semibold  pt-[2vw] sm:p-[5vw]  mb-[2vw]"
       >
-        Tic Tac Toe Game in <span className="text-[#26ffcd]">React</span>
+        Play <span className="text-[#26ffcd]">Tic Tac Toe</span> Game
       </motion.h1>
       {winner && <Winner />}
       <motion.div
@@ -36,7 +36,7 @@ const TicTacToe = () => {
         transition={{ease: [0.61, 1, 0.88, 1],
           duration: 1, delay: 0.5,          
         }}
-        className="board  flex flex-wrap justify-center w-[20vw] sm:w-[60vw] h-[16vw] sm:h-[48vw] mb-[1.5vw] sm:mb-[4vw]"
+        className="board  flex flex-wrap justify-center w-[20vw] sm:w-[60vw] h-[16vw] sm:h-[48vw] mb-[2vw] sm:mb-[4vw]"
       >
         {squares.map((square, index) => (
           <div
